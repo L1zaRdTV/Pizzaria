@@ -1,10 +1,10 @@
 fun main() {
-    val MoscowPrices = mapOf("Маргарита" to 500.0, "Пепперони" to 600.0)
-    val PeterPrices = mapOf("Маргарита" to 480.0, "Пепперони" to 580.0)
+    val MoscowPrices = mapOf("Маргарита" to 500.0, "Пепперони" to 600.0) //MoscowPrices, которая представляет собой карту или словарь
+    val PeterPrices = mapOf("Маргарита" to 480.0, "Пепперони" to 580.0) 
     val KislavodskPrices = mapOf("Маргарита" to 450.0, "Пепперони" to 550.0)
-    val sauces = mapOf("Томатный" to 30.0, "Чесночный" to 40.0)
+    val sauces = mapOf("Томатный" to 30.0, "Чесночный" to 40.0) //Здесь создаётся карта sauces, в которой перечислены соусы и их цены
 
-    println("Выберите город:\n1 - Москва\n2 - Санкт-Петербург\n3 - Кисловодск")
+    println("Выберите город:\n1 - Москва\n2 - Санкт-Петербург\n3 - Кисловодск")//Эта строка выводит на экран приглашение выбрать город.
     when (readLine()) {
         "1" -> {
             val Moscow = PizzaMoscow(MoscowPrices)
